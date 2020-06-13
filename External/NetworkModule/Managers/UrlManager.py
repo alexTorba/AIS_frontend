@@ -1,9 +1,9 @@
 import os
 from typing import Tuple, Union
 
-from JsonFomatterModule.JsonFormatter import JsonFormatter
-from NetworkModule.Data.DtoData.RequestData import BaseRequestDto
-from NetworkModule.Data.UrlData.UrlInfo import UrlInfo
+from External.JsonFomatterModule.JsonFormatter import JsonFormatter
+from External.NetworkModule.Data.DtoData.RequestData.BaseRequestDto import BaseRequestDto
+from External.NetworkModule.Data.UrlData.UrlInfo import UrlInfo
 
 
 class UrlManager:

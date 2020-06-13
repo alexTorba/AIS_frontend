@@ -1,5 +1,5 @@
-from JsonFomatterModule.JsonFormatter import JsonFormatter
-from JsonFomatterModule.JsonTest.Entities.Person import Person
+from External.JsonFomatterModule.JsonFormatter import JsonFormatter
+from External.JsonFomatterModule.JsonTest.Entities.Person import Person
 
 
 class Test:

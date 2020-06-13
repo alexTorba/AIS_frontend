@@ -1,4 +1,4 @@
-from JsonFomatterModule.JsonContract import JsonContract
+from External.JsonFomatterModule.JsonContract import JsonContract
 
 
 class BaseRequestDto(JsonContract):

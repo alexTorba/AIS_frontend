@@ -1,4 +1,4 @@
-from ImageModule.ImageManager import ImageManager
+from ModelModule.ImageModule.ImageManager import ImageManager
 
 
 class ImageCreationTest:

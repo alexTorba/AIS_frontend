@@ -1,10 +1,10 @@
 from typing import Union, Callable, Dict, Tuple
 
-from JsonFomatterModule.JsonFormatter import JsonFormatter
-from NetworkModule.Data.DtoData.RequestData.BaseRequestDto import BaseRequestDto
-from NetworkModule.Data.DtoData.ResponceData.BaseResponseDto import BaseResponseDto
-from NetworkModule.Data.ExceptionsData.ServerLogicException import ServerLogicException
-from NetworkModule.Managers.UrlManager import UrlManager
+from External.JsonFomatterModule.JsonFormatter import JsonFormatter
+from External.NetworkModule.Data.DtoData.RequestData.BaseRequestDto import BaseRequestDto
+from External.NetworkModule.Data.DtoData.ResponceData.BaseResponseDto import BaseResponseDto
+from External.NetworkModule.Data.ExceptionsData.ServerLogicException import ServerLogicException
+from External.NetworkModule.Managers.UrlManager import UrlManager
 
 
 class MethodHandler:

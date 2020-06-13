@@ -1,6 +1,7 @@
 from PIL import Image
 
-from External.ImageModule.ImageManager import ImageManager
+from ModelModule.ImageModule.Data.ImageView import ImageView
+from ModelModule.ImageModule.ImageManager import ImageManager
 
 
 class Model:
@@ -11,3 +12,7 @@ class Model:
     @staticmethod
     def get_white_image(width: int, height: int) -> Image:
         return ImageManager.create_white_image(width, height)
+
+    @staticmethod
+    def convert_image_to_imageView(image: Image) -> ImageView:
+        return ImageManager.image_to_imageView(image)

@@ -1,10 +1,7 @@
 from tkinter import Tk, Button, Label, Frame, TOP, BOTH, RAISED, BOTTOM, LEFT, RIGHT
 
-from PIL import ImageTk
 from PIL.Image import Image
 from pubsub import pub
-
-from External.ImageModule.ImageManager import ImageManager
 
 
 class View:
@@ -15,6 +12,7 @@ class View:
     __top_left_frame: Frame
     __top_right_frame: Frame
     __bottom_frame: Frame
+    __last_generated_image: Image
 
     def __init__(self):
         self.init_UI()
@@ -75,23 +73,24 @@ class View:
 
     @staticmethod
     def create_image_handler():
-        print("create_image_handler invoke")
         pub.sendMessage("create_image")
 
-    @staticmethod
-    def run_handler():
-        print("run_handler invoke")
+    def run_handler(self):
+        pub.sendMessage("run", image=self.__last_generated_image)
 
     def get_image_label(self):
         return self.__bottom_frame.children.get("image_label")
 
+    def save_generated_image(self, image: Image):
+        self.__last_generated_image = image
+
     @staticmethod
     def get_image_width() -> int:
-        return 650
+        return 20
 
     @staticmethod
     def get_image_height() -> int:
-        return 300
+        return 20
 
     @staticmethod
     def init_image_handler():

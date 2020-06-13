@@ -1,11 +1,11 @@
 from http.server import BaseHTTPRequestHandler
 
-from JsonFomatterModule.JsonFormatter import JsonFormatter
-from NetworkModule.Data.ExceptionsData.ServerLogicException import ServerLogicException
-from NetworkModule.Handlers.MethodHandler import MethodHandler
-
-
 # noinspection PyPep8Naming
+from External.JsonFomatterModule.JsonFormatter import JsonFormatter
+from External.NetworkModule.Data.ExceptionsData.ServerLogicException import ServerLogicException
+from External.NetworkModule.Handlers.MethodHandler import MethodHandler
+
+
 class HttpRequestHandler(BaseHTTPRequestHandler):
     method_handler: MethodHandler
 

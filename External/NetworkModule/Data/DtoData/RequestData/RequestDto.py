@@ -1,8 +1,8 @@
 import typing
 from typing import TypeVar
 
-from JsonFomatterModule.JsonContract import JsonContract
-from NetworkModule.Data.DtoData.RequestData.BaseRequestDto import BaseRequestDto
+from External.JsonFomatterModule.JsonContract import JsonContract
+from External.NetworkModule.Data.DtoData.RequestData.BaseRequestDto import BaseRequestDto
 
 T = TypeVar("T", bound=JsonContract)
 
